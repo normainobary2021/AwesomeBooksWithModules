@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Awesome Books with Modules</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#list" class="logo">Awesome Books</a>
+            <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#" class="nav-list nav-link">List</a>
+            </li>
+            <li class="separator">|</li>
+            <li class="nav-item">
+                <a href="#" class="nav-add nav-link">Add New</a>
+            </li>
+            <li class="separator">|</li>
+            <li class="nav-item">
+                <a href="#" class="nav-contact nav-link">Contact</a>
+            </li>
+            </ul>
+        </nav>
+        <div class="time">
+            <time datetime="1914-12-20T08:00">Time Here</time>
+        </div>
+    </header>
+
+    <main>
+    <!-- list section -->
+    <section class="list main" id="list">
+        <h1>All Awesome Books</h1>
+        <table>
+        <tbody class="tbody" id="tbody"></tbody>
+        </table>
+        <p class="empty hide">Books List is Empty, Add Some Books!</p>
+    </section>
+
+    <!-- add book section -->
+    <section class="add main hide">
+        <h1>Add a new book</h1>
+        <div class="form">
+        <form action="#" method="POST">
+            <input type="text" placeholder="Title" id="book-title" required />
+            <br />
+            <input type="text" placeholder="Author" id="book-author" required />
+            <br />
+            <button type="submit">Add</button>
+        </form>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact main hide">
+        <div class="contact-details">
+        <h1>Contact Information</h1>
+        <p>For any inquiries:</p>
+        <p>Reach out through the following</p>
+        <ul>
+            <li>Email : norman.ainobushoborozi@gmail.com</li>
+            <li>Telephone : +256(0)753 273158</li>
+            <li>Location: Banda, Kyambogo, Uganda</li>
+        </ul>
+        </div>
+    </section>
+    </main>
+    
+    <!-- footer -->
+    <footer>
+    <p>&copy; Normainobary</p>
+    </footer>
+    
+    <script src="https://moment.github.io/luxon/global/luxon.min.js"></script>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
